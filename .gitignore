@@ -1,0 +1,9 @@
+# Odoo / Docker runtime data
+odoo-data/
+postgres-data/
+config/odoo.conf
+*.log
+*.pyc
+__pycache__/
+.idea/
+.vscode/
