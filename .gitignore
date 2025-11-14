@@ -1,0 +1,28 @@
+# Ignorar datos de Odoo
+postgres-data/
+odoo-data/
+*.log
+*.pyc
+__pycache__/
+*.swp
+*.pot
+*.mo
+
+# Docker
+*.pid
+*.sock
+*.db
+*.csv
+*.zip
+*.tar
+*.gz
+
+# Archivos del sistema
+.DS_Store
+Thumbs.db
+.env
+
+# Archivos temporales
+*.tmp
+*.bak
+*.old
