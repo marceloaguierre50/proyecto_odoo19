@@ -1,9 +1,50 @@
-# Odoo / Docker runtime data
+# =========================
+# Odoo / Python
+# =========================
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.pot
+*.mo
+*.log
+
+# =========================
+# Odoo runtime data
+# =========================
 odoo-data/
 postgres-data/
-config/odoo.conf
-*.log
-*.pyc
-__pycache__/
+filestore/
+
+# =========================
+# Docker / entorno
+# =========================
+.env
+*.env
+*.pid
+*.sock
+*.db
+*.csv
+*.zip
+*.tar
+*.gz
+
+# =========================
+# IDEs
+# =========================
 .idea/
 .vscode/
+
+# =========================
+# Archivos temporales
+# =========================
+*.swp
+*.tmp
+*.bak
+*.old
+
+# =========================
+# Sistema operativo
+# =========================
+.DS_Store
+Thumbs.db
