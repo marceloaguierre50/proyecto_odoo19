@@ -1,14 +1,26 @@
-# Ignorar datos de Odoo
-postgres-data/
-odoo-data/
-*.log
-*.pyc
+# =========================
+# Odoo / Python
+# =========================
 __pycache__/
-*.swp
+*.pyc
+*.pyo
+*.pyd
 *.pot
 *.mo
+*.log
 
-# Docker
+# =========================
+# Odoo runtime data
+# =========================
+odoo-data/
+postgres-data/
+filestore/
+
+# =========================
+# Docker / entorno
+# =========================
+.env
+*.env
 *.pid
 *.sock
 *.db
@@ -17,12 +29,22 @@ __pycache__/
 *.tar
 *.gz
 
-# Archivos del sistema
-.DS_Store
-Thumbs.db
-.env
+# =========================
+# IDEs
+# =========================
+.idea/
+.vscode/
 
+# =========================
 # Archivos temporales
+# =========================
+*.swp
 *.tmp
 *.bak
 *.old
+
+# =========================
+# Sistema operativo
+# =========================
+.DS_Store
+Thumbs.db
