@@ -1,3 +1,5 @@
+version: "3.8"
+
 services:
   web:
     image: odoo:19.0
@@ -5,11 +7,7 @@ services:
     depends_on:
       - mydb
     ports:
-      - "8024:8069" # Usá un puerto nuevo para evitar conflicto con 8023
-    environment:
-      - DB_HOST=mydb
-      - DB_USER=odoo
-      - DB_PASSWORD=myodoo
+      - "8025:8069"
     volumes:
       - ./odoo-data:/var/lib/odoo
       - ./addons:/mnt/extra-addons
@@ -19,8 +17,8 @@ services:
     image: postgres:16
     container_name: odoo19_day_db
     environment:
-      - POSTGRES_DB=postgres
-      - POSTGRES_PASSWORD=myodoo
-      - POSTGRES_USER=odoo
+      POSTGRES_DB: postgres
+      POSTGRES_USER: odoo
+      POSTGRES_PASSWORD: myodoo
     volumes:
       - ./postgres-data:/var/lib/postgresql/data
